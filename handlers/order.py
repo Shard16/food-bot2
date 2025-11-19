@@ -174,7 +174,7 @@ def collect_user_data(message, bot):
             else:
                 order_summary += f"- {item_name} x{quantity}\n"
 
-        order_summary += f"\n💰 *Total:* ${total:.2f}\n🕒 {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+        order_summary += f"\n💰 *Total:* #{total:.2f}\n🕒 {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
 
         bot.send_message(message.chat.id, order_summary, parse_mode="Markdown")
 

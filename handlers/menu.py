@@ -57,7 +57,7 @@ def menu_callback(call, bot):
         item_name = item.get('name')
         item_price = item.get('price')
         markup.add(types.InlineKeyboardButton(
-            f"🍽️ {item_name} - ${item_price}",
+            f"🍽️ {item_name} - #{item_price}",
             callback_data=f"add_{item_name}"
         ))
 
